@@ -102,23 +102,21 @@
 
                 <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP"></div>
                 <div align="center"><input type="submit" value="Submit" id="submit" class="boton-enviar"></div>
+                <script>
+                    inputSubmit = document.getElementById("submit");
+                    inputSubmit.style.display = "none";
+
+                    var response = grecaptcha.getResponse();
+                    console.log(response);
+                    if (response.length == 0) {
+                        inputSubmit.style.display = "none";
+                    } else {
+                        inputSubmit.style.display = "block";
+                    }
+                </script>
             </fieldset>
         </form>
     </main>
-
-    <script>
-        inputSubmit = document.getElementById("submit");
-
-        var response = grecaptcha.getResponse();
-        console.log(response);
-        if (response.length == 0) {
-            inputSubmit.style.display = "none";
-        } else {
-            inputSubmit.style.display = "block";
-        }
-    </script>
-
-
 
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
