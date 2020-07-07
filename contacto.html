@@ -93,7 +93,8 @@
             </fieldset>
 
             <fieldset>
-                <label for="opcion">Tipo</label>
+                <legend>Cómo quiere ser contactado?</legend>
+                <label for="opcion">Medio</label>
                 <select name="contacto" id="contacto">
 	          		<option value="" disabled selected>--Seleccione--</option>
 	         		<option value="telefono">Teléfono</option>
@@ -128,7 +129,7 @@
 
         function recaptchaExpired() {
             inputSubmit.style.display = "none";
-            alert("Your Recaptcha has expired, please verify it again !");
+            // alert("Your Recaptcha has expired, please verify it again !");
         }
     </script>
 
@@ -136,20 +137,20 @@
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
     <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyw_JuDRDmN8YO09Gq3wRRzUoltI_P6HTg-qlk8IXanYlqVktQ/exec'
-        const form = document.forms['submit-to-google-sheet']
+        if (correctCaptcha.length > 0) {
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyw_JuDRDmN8YO09Gq3wRRzUoltI_P6HTg-qlk8IXanYlqVktQ/exec'
+            const form = document.forms['submit-to-google-sheet']
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
-        inputSubmit = document.getElementById("submit");
-        inputSubmit.style.display = "none";
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => console.log('Success!', response))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        }
     </script>
 
 </body>
