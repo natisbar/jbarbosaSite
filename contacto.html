@@ -100,7 +100,7 @@
 	          		<option value="email">E-mail</option>
 				</select>
 
-                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP"></div>
+                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha"></div>
                 <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
@@ -115,16 +115,20 @@
     </footer>
 
     <script>
-        inputSubmit = document.getElementById("submit");
-        inputSubmit.style.display = "none";
+        var correctCaptcha = function(response) {
+            alert(response);
+        };
+        // inputSubmit = document.getElementById("submit");
+        // inputSubmit.style.display = "none";
 
-        var response = grecaptcha.getResponse();
-        console.log(response);
-        if (response.length == 0) {
-            inputSubmit.style.display = "none";
-        } else {
-            inputSubmit.style.display = "block";
-        }
+        // var response = grecaptcha.getResponse();
+        // geto
+        // console.log(response);
+        // if (response.length == 0) {
+        //     inputSubmit.style.display = "none";
+        // } else {
+        //     inputSubmit.style.display = "block";
+        // }
     </script>
 
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
