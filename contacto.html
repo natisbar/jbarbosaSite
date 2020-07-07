@@ -101,22 +101,31 @@
 				</select>
 
                 <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP"></div>
-                <div align="center"><input type="submit" value="Submit" id="submit" class="boton-enviar"></div>
-                <script>
-                    inputSubmit = document.getElementById("submit");
-                    inputSubmit.style.display = "none";
-
-                    var response = grecaptcha.getResponse();
-                    console.log(response);
-                    if (response.length == 0) {
-                        inputSubmit.style.display = "none";
-                    } else {
-                        inputSubmit.style.display = "block";
-                    }
-                </script>
+                <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
     </main>
+
+    <footer class="site-footer">
+        <div class="contenedor">
+            <div class="">
+                <p class="no-margin">Diseño <span> J.Barbosa &copy</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        inputSubmit = document.getElementById("submit");
+        inputSubmit.style.display = "none";
+
+        var response = grecaptcha.getResponse();
+        console.log(response);
+        if (response.length == 0) {
+            inputSubmit.style.display = "none";
+        } else {
+            inputSubmit.style.display = "block";
+        }
+    </script>
 
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
@@ -136,13 +145,6 @@
         })
     </script>
 
-    <footer class="site-footer">
-        <div class="contenedor">
-            <div class="">
-                <p class="no-margin">Diseño <span> J.Barbosa &copy</span></p>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>
