@@ -101,10 +101,22 @@
 				</select>
 
                 <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP"></div>
-                <div align="center"><input type="submit" value="Submit" class="boton-enviar"></div>
+                <div align="center"><input type="submit" value="Submit" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
     </main>
+
+    <script>
+        inputSubmit = document.getElementById("submit");
+
+        var response = grecaptcha.getResponse();
+        console.log(response);
+        if (response.length == 0) {
+            inputSubmit.style.display = "none";
+        } else {
+            inputSubmit.style.display = "block";
+        }
+    </script>
 
 
 
