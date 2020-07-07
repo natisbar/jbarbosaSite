@@ -100,7 +100,7 @@
 	          		<option value="email">E-mail</option>
 				</select>
 
-                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="vencido"></div>
+                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="recaptchaExpired"></div>
                 <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
@@ -126,13 +126,9 @@
             }
         }
 
-        var vencido = function(response) {
-            console.log(response);
-            if (vencido == null) {
-                inputSubmit.style.display = "none";
-            } else {
-                inputSubmit.style.display = "block";
-            }
+        function recaptchaExpired() {
+            inputSubmit.style.display = "none";
+            alert("Your Recaptcha has expired, please verify it again !");
         }
     </script>
 
