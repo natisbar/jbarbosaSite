@@ -102,7 +102,9 @@
 				</select>
 
                 <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="recaptchaExpired"></div>
-                <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
+                <div align="center"><input onclick="myFunction()" type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
+                <!-- <div></div> -->
+                <input type="reset" value="Borrar información" id=resetear style="display: none;">
             </fieldset>
         </form>
     </main>
@@ -116,6 +118,10 @@
     </footer>
 
     <script>
+        function myFunction() {
+            document.getElementById('resetear').click();
+            alert("Su formulario se envió correctamente");
+        }
         var aux = false;
         var inputSubmit = document.getElementById("submit");
         inputSubmit.style.display = "none";
