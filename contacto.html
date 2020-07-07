@@ -12,6 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--<script src="imgmain.js"></script>-->
+    <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </script>
 </head>
 
 <body>
@@ -53,11 +56,11 @@
     <main class="contenedor-contacto alineacion-contacto">
 
         <h1 class="fw-300 centrar-texto h1-contacto">Escribenos y te contactaremos!</h1>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             var onloadCallback = function() {
                 alert("grecaptcha is ready!");
             };
-        </script>
+        </script> -->
         <form name="submit-to-google-sheet" id="my_captcha_form" action="?" method="POST" class="texto-contacto">
             <fieldset>
                 <legend>Información de Contacto</legend>
@@ -103,8 +106,7 @@
         </form>
     </main>
 
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-    </script>
+
 
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
