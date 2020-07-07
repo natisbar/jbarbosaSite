@@ -100,7 +100,7 @@
 	          		<option value="email">E-mail</option>
 				</select>
 
-                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha"></div>
+                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="callbackExpired"></div>
                 <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
@@ -118,23 +118,20 @@
         inputSubmit = document.getElementById("submit");
         inputSubmit.style.display = "none";
         var correctCaptcha = function(response) {
-            if (response.length == 0) {
+            if (correctCaptcha.length == 0) {
                 inputSubmit.style.display = "none";
             } else {
                 inputSubmit.style.display = "block";
             }
         };
-        // inputSubmit = document.getElementById("submit");
-        // inputSubmit.style.display = "none";
 
-        // var response = grecaptcha.getResponse();
-        // geto
-        // console.log(response);
-        // if (response.length == 0) {
-        //     inputSubmit.style.display = "none";
-        // } else {
-        //     inputSubmit.style.display = "block";
-        // }
+        var callbackExpired = function(response) {
+            if (callbackExpired.length == 0) {
+                inputSubmit.style.display = "none";
+            } else {
+                inputSubmit.style.display = "block";
+            }
+        };
     </script>
 
     <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
@@ -153,6 +150,7 @@
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
         })
+        inputSubmit = document.getElementById("submit");
         inputSubmit.style.display = "none";
     </script>
 
