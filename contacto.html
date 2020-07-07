@@ -115,8 +115,14 @@
     </footer>
 
     <script>
+        inputSubmit = document.getElementById("submit");
+        inputSubmit.style.display = "none";
         var correctCaptcha = function(response) {
-            alert(response);
+            if (response.length == 0) {
+                inputSubmit.style.display = "none";
+            } else {
+                inputSubmit.style.display = "block";
+            }
         };
         // inputSubmit = document.getElementById("submit");
         // inputSubmit.style.display = "none";
