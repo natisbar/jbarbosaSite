@@ -116,12 +116,14 @@
     </footer>
 
     <script>
+        aux = false;
         inputSubmit = document.getElementById("submit");
         inputSubmit.style.display = "none";
         var correctCaptcha = function(response) {
             console.log(response);
             if (correctCaptcha.length == 0) {
                 inputSubmit.style.display = "none";
+                aux = true;
             } else {
                 inputSubmit.style.display = "block";
             }
@@ -129,6 +131,7 @@
 
         function recaptchaExpired() {
             inputSubmit.style.display = "none";
+            aux = false;
             // alert("Your Recaptcha has expired, please verify it again !");
         }
     </script>
@@ -137,7 +140,7 @@
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
     <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <script>
-        if (correctCaptcha.length > 0) {
+        if (aux == true) {
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyw_JuDRDmN8YO09Gq3wRRzUoltI_P6HTg-qlk8IXanYlqVktQ/exec'
             const form = document.forms['submit-to-google-sheet']
 
