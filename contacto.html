@@ -100,7 +100,7 @@
 	          		<option value="email">E-mail</option>
 				</select>
 
-                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="callbackExpired"></div>
+                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="vencido"></div>
                 <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
             </fieldset>
         </form>
@@ -118,6 +118,7 @@
         inputSubmit = document.getElementById("submit");
         inputSubmit.style.display = "none";
         var correctCaptcha = function(response) {
+            console.log(response);
             if (correctCaptcha.length == 0) {
                 inputSubmit.style.display = "none";
             } else {
@@ -125,8 +126,8 @@
             }
         }
 
-        var callbackExpired = function(response) {
-            alert(callbackExpired);
+        var vencido = function(response) {
+            console.log(response);
             if (callbackExpired.length == 0) {
                 inputSubmit.style.display = "none";
             } else {
