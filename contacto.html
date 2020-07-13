@@ -1,66 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Diseños Barbosa</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--<script src="imgmain.js"></script>-->
-    <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Diseños Barbosa</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="imgmain.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="contenedor">
-            <div class="barra encabezado">
-                <a href="index.html">
-                    <img class="logo" src="img/logo.png" alt="logo diseños barbosa">
-                </a>
-                <nav class="navegacion">
-                    <div class="navegacion-a">
-                        <ul>
-                            <li><a href="index.html">Nosotros</a></li>
-                            <li><a href="#">Nuestros productos</a>
-                                <ul class="dropdown">
-                                    <li><a href="juegosabanas.html">Juegos de sabanas</a></li>
-                                    <li><a href="cubrecamas.html">Cubrecamas doblefaz</a></li>
-                                    <li><a href="acolchados.html">Edredones</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="contacto.html">Contactanos</a></li>
-                        </ul>
-                    </div>
-                    <div class="icon-bar">
-                        <a href="https://www.facebook.com/Confecciones-J-Barbosa-446460499422879" target="_blank"><i class="fa fa-facebook-square" style="font-size:5rem;color:#4267B2"></i>
+	<header>
+		<a href="index.html">
+				<img class="logo" src="img/logo.png" alt="logo diseños barbosa">
+		</a>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Nuestros Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+								<div class="icon-bar">
+									<a href="https://www.facebook.com/Confecciones-J-Barbosa-446460499422879" target="_blank"><i class="fa fa-facebook-square" style="font-size:5rem;color:#4267B2"></i>
 									<a href="https://wa.me/573142220567?text=Me%20gustaría%20saber%20el%20precio%20del..." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon" style="font-size:5rem;color:#4AC959"></i></a>
-                        <a href="https://www.instagram.com/disenosj.barbosa/" target="_blank" class="instagram"><i class="fa fa-instagram" style="font-size:5rem;color:#C13584"></i></a>
-                    </div>
-                </nav>
-            </div>
-            <!--barra-->
-            <div class="texto-header">
-                <h2 class="contenido-header">Hermosos diseños textiles para tu hogar</h2>
-                <p class="contenido-header">Descubre maneras fáciles y económicas para embellecer tu hogar</p>
-            </div>
-        </div>
-        <!--contenedor-->
-    </header>
-    <main class="contenedor-contacto alineacion-contacto">
+									<a href="https://www.instagram.com/disenosj.barbosa/" target="_blank" class="instagram"><i class="fa fa-instagram" style="font-size:5rem;color:#C13584"></i></a>
+								</div>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</header>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
 
-        <h1 class="fw-300 centrar-texto h1-contacto">Escribenos y te contactaremos!</h1>
-        <!-- <script type="text/javascript">
-            var onloadCallback = function() {
-                alert("grecaptcha is ready!");
-            };
-        </script> -->
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
+    <main>
+			<h1 class="h1-productos">¡Realiza tu pedido!</h1>
+			<div class="contenedor-contacto alineacion-contacto">
         <form name="submit-to-google-sheet" id="my_captcha_form" action="?" method="POST" class="texto-contacto">
             <fieldset>
                 <legend>Información de Contacto</legend>
@@ -75,9 +59,9 @@
             </fieldset>
 
             <fieldset>
-                <legend>Informacion de Producto</legend>
+                <legend>Información de Producto</legend>
 
-                <label for="opcion">Tipo</label>
+                <label for="opcion">Tipo:</label>
                 <select name="opciones" id="opciones">
 	          		<option value="" disabled selected>--Seleccione--</option>
 	         		<option value="Juegos de Sabana">Juegos de Sabana</option>
@@ -88,13 +72,13 @@
                 <label for="cantidad">Cantidad:</label>
                 <input type="number" name="cantidad" max="20" min="1">
 
-                <label for="mensaje">Detalles en producto:</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Indicanos los colores y formas de tu gusto!"></textarea>
+                <label for="mensaje">Características producto:</label>
+                <textarea name="mensaje" id="mensaje" placeholder="¡Indicanos los colores y formas que deseas!"></textarea>
             </fieldset>
 
             <fieldset>
-                <legend>Cómo quiere ser contactado?</legend>
-                <label for="opcion">Medio</label>
+                <legend>¿Cómo quiere ser contactado?</legend>
+                <label for="opcion">Seleccione:</label>
                 <select name="contacto" id="contacto">
 	          		<option value="" disabled selected>--Seleccione--</option>
 	         		<option value="telefono">Teléfono</option>
@@ -107,6 +91,7 @@
                 <input type="reset" value="Borrar información" id=resetear style="display: none;">
             </fieldset>
         </form>
+				</div>
     </main>
 
     <footer class="site-footer">
@@ -157,7 +142,7 @@
             alert("Su formulario se envió correctamente");
         })
     </script>
-    <!-- 
+    <!--
     <script>
         function myFunction() {
 

@@ -1,0 +1,25 @@
+		<div class="barra encabezado">
+			<a href="index.html">
+				<img class="logo" src="img/logo.png" alt="logo diseños barbosa">
+			</a>
+			<nav class="navegacion">
+			<div class="navegacion-a">
+				<ul>
+					<li><a href="index.html">Nosotros</a></li>
+					<li><a href="#">Nuestros productos</a>
+						<ul class="dropdown">
+							<li><a href="juegosabanas.html">Juegos de sabanas</a></li>
+							<li><a href="cubrecamas.html">Cubrecamas doblefaz</a></li>
+							<li><a href="edredones.html">Edredones</a></li>
+						</ul>
+					</li>
+					<li><a href="contacto.html">Contactanos</a></li>
+				</ul>
+			</div>
+			</nav>
+		</div><!--barra-->
+		<div class="texto-header">
+			<h2 class="contenido-header">Hermosos diseños textiles para tu hogar</h2>
+			<p class="contenido-header"><em>Descubre maneras fáciles y económicas para embellecer tu hogar</em></p>
+		</div>
+		</div><!--contenedor-->
