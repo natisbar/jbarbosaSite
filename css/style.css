@@ -97,11 +97,11 @@ header nav ul li a.active {
 }
 @media (max-width: 1250px) {
 	.logo {
-	margin: 1.5% 1% 1% 35%;
-	max-width: 70%;
+	margin: 1.5% 1% 1% 30%;
+	max-width: 75%;
   max-height: 50vh;
 	min-height: 7vh;
-	min-width: 35%;
+	min-width: 40%;
 	}
 	header {
 		position: fixed;
@@ -260,13 +260,13 @@ main span {
 }
 .site-footer p {
 	color: #ffffff;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 400;
 	font-family: 'Cormorant Upright', serif;
 }
 .site-footer p span {
 	font-weight: 700;
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 /**---CONTACTO------------------------------------------------------------**/
 .contenedor-contacto {
@@ -639,8 +639,8 @@ main .h1-productos {
 		font-size: 2.3rem;
 }
 .centered {
-		-webkit-text-stroke: 1px #5D0008;
-		color: #BB1D27;
+		-webkit-text-stroke: 1.5px #000;
+		color: #fff;
 		font-weight: 700;
 		height: 100%;
 		width: 100%;
@@ -680,7 +680,8 @@ main .h1-productos {
 }
 @media (max-width:1250px) and (min-width:601px) {
 	.centered {
-			font-size: 4.5rem!important;
+			-webkit-text-stroke: 1.5px #000;
+			font-size: 5rem!important;
 			height: 100%;
 			width: 100%;
 			margin-top: 40%;
