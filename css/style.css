@@ -51,9 +51,6 @@ img {
   color: white;
   font-size: 1rem;
 }
-.icon-bar a:hover {
-  background-color: rgb(232, 237, 247, 0.2);
-}
 /*MENU-----------------*/
 header {
 	z-index: 1;
@@ -85,11 +82,6 @@ header nav ul li a {
 	text-decoration: none;
 	display: block;
 }
-header nav ul li a:hover,
-header nav ul li a.active {
-	color: #fff;
-	background: #BB1D27;
-}
 .menu-toggle {
 	color: #fff;
 	float: right;
@@ -97,6 +89,11 @@ header nav ul li a.active {
 	font-size: 5rem;
 	cursor: pointer;
 	display: none;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+	color: #fff;
+	background: #BB1D27;
 }
 @media (max-width: 1250px) {
 	.logo {
@@ -150,6 +147,9 @@ header nav ul li a.active {
 }
 /*MENU-----------------*/
 @media (min-width: 1249px) {
+.icon-bar a:hover {
+	  background-color: rgb(232, 237, 247, 0.2);
+	}
 li {
 	  color: white;
     display: block;
@@ -594,11 +594,6 @@ main .h1-productos {
   transition: .5s ease;
 	background-color: #BB1D27;
 }
-
-.container-productos:hover .overlay-productos {
-  opacity: 1;
-	border-radius: 3rem;
-}
 .text {
   color: white;
   font-size: 3rem;
@@ -613,6 +608,12 @@ main .h1-productos {
 .overlay-productos a {
 	font-family: 'Cormorant Upright', serif!important;
 	text-decoration: none;
+}
+@media (min-width: 990px) {
+	.container-productos:hover .overlay-productos {
+	  opacity: 1;
+		border-radius: 3rem;
+	}
 }
 @media (max-width: 990px) {
 	main .h1-productos {
