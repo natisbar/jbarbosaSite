@@ -100,7 +100,7 @@ header nav ul li a.active {
 }
 @media (max-width: 1250px) {
 	.logo {
-	margin: 1.5% 1% 1% 40%;
+	margin: 1.5% 1% 1% 35%;
 	max-width: 70%;
   max-height: 50vh;
 	min-height: 7vh;
@@ -120,6 +120,7 @@ header nav ul li a.active {
 	}
 	.menu-toggle {
 		margin-top: 2.5%;
+		margin-right: 2%;
 		display: block;
 	}
 	header nav {
@@ -561,7 +562,6 @@ textarea {
 }
 /*PRUEBA NOSOTROS A VER SI LE GUSTA A MI BBSITA------------------------------*/
 .main-productos .container-productos {
-	margin-bottom: 20%;
   display: inline-block;
 }
 main .h1-productos {
