@@ -680,7 +680,7 @@ main .h1-productos {
 }
 @media (max-width:1250px) and (min-width:601px) {
 	.centered {
-			font-size: 3rem!important;
+			font-size: 4.5rem!important;
 			height: 100%;
 			width: 100%;
 			margin-top: 40%;
