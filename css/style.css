@@ -617,7 +617,7 @@ main .h1-productos {
 @media (max-width: 990px) {
 	main .h1-productos {
 		font-size: 4.5rem;
-		margin-top: 13%;
+		margin-top: 20%;
 		text-align: center;
 		align-items: center;
 	}
@@ -627,12 +627,12 @@ main .h1-productos {
 	  height: auto;
 }
   .container-productos {
-	  margin: 4% 40% 1% 40%!important;
+	  margin: 4% 40% 8% 40%!important;
 	  position: relative;
 	  width: 25%;
 }
 .text {
-		font-size: 3rem;
+		font-size: 2.3rem;
 }
 .centered {
 		-webkit-text-stroke: 0.3px black;
@@ -662,7 +662,7 @@ main .h1-productos {
 .centered {
 		height: 100%;
 		width: 100%;
-		font-size: 3rem;
+		font-size: 2.3rem;
 		font-family: 'Cormorant Upright', serif!important;
 	  position: absolute;
 	  top: 50%;
