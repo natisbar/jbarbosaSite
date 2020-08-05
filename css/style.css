@@ -7,7 +7,8 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: #fff;
+	background: url(../img/camablanca.jpg) no-repeat 50% fixed;
+    
 }
 /* Globales */
 .contenedor {
@@ -611,8 +612,8 @@ main .h1-productos {
 }
 @media (min-width: 990px) {
 	.container-productos:hover .overlay-productos {
-	  opacity: 1;
-		border-radius: 3rem;
+        opacity: 1;
+        border-radius: 3rem;
 	}
 }
 @media (max-width: 990px) {
