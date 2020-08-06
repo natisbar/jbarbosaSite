@@ -7,8 +7,8 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background: url(../img/camablanca.jpg) no-repeat 50% fixed;
-    
+    background-image: url(../img/camablanca.jpg);
+    background-size: cover;
 }
 /* Globales */
 .contenedor {
@@ -640,8 +640,8 @@ main .h1-productos {
 		font-size: 2.3rem;
 }
 .centered {
-		-webkit-text-stroke: 1.5px #000;
-		color: #fff;
+		-webkit-text-stroke: 1px #760000;
+		color: #bb1d27;
 		font-weight: 700;
 		height: 100%;
 		width: 100%;
