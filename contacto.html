@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Diseños Barbosa</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="imgmain.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diseños Barbosa</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="imgmain.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<header>
-		<a href="index.html">
-				<img class="logo" src="img/logo.png" alt="logo diseños barbosa">
-		</a>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="img/logo.png" alt="logo diseños barbosa">
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Nuestros Productos</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contactanos</a></li>
-								<div class="icon-bar">
-									<a href="https://www.facebook.com/Confecciones-J-Barbosa-446460499422879" target="_blank"><i class="fa fa-facebook-square" style="font-size:5rem;color:#4267B2"></i>
-									<a href="https://wa.me/573142220567?text=Me%20gustaría%20saber%20el%20precio%20del..." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon" style="font-size:5rem;color:#4AC959"></i></a>
-									<a href="https://www.instagram.com/disenosj.barbosa/" target="_blank" class="instagram"><i class="fa fa-instagram" style="font-size:5rem;color:#C13584"></i></a>
-								</div>
+                <div class="icon-bar">
+                    <a href="https://www.facebook.com/Confecciones-J-Barbosa-446460499422879" target="_blank"><i class="fa fa-facebook-square" style="font-size:5rem;color:#4267B2"></i>
+					<a href="https://wa.me/573142220567?text=Me%20gustaría%20saber%20el%20precio%20del..." class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon" style="font-size:5rem;color:#4AC959"></i></a>
+                    <a href="https://www.instagram.com/disenosj.barbosa/" target="_blank" class="instagram"><i class="fa fa-instagram" style="font-size:5rem;color:#C13584"></i></a>
+                </div>
             </ul>
         </nav>
         <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-		</header>
+    </header>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-            $('.menu-toggle').click(function(){
-
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
                 $('nav').toggleClass('active')
             })
         })
     </script>
 
     <main>
-			<h1 class="h1-productos">¡Realiza tu pedido!</h1>
-			<div class="contenedor-contacto alineacion-contacto">
-        <form name="submit-to-google-sheet" id="my_captcha_form" action="?" method="POST" class="texto-contacto">
-            <fieldset>
-                <legend>Información de Contacto</legend>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
+        <h1 class="h1-productos" id="titulo">¡Realiza tu pedido!</h1>
+        <div class="contenedor-contacto alineacion-contacto">
+            <!-- id="my_captcha_form" -->
+            <form name="submit-to-google-sheet" id="FormularioContactanos" action="?" method="POST" class="texto-contacto">
+                <fieldset>
+                    <legend>Información de Contacto</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre" required>
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Tu teléfono" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Tu teléfono" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="Tu Correo Electronico">
-            </fieldset>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Tu Correo Electronico">
+                </fieldset>
 
-            <fieldset>
-                <legend>Información de Producto</legend>
+                <fieldset>
+                    <legend>Información de Producto</legend>
 
-                <label for="opcion">Tipo:</label>
-                <select name="opciones" id="opciones">
+                    <label for="opcion">Tipo:</label>
+                    <select name="opciones" id="opciones">
 	          		<option value="" disabled selected>--Seleccione--</option>
 	         		<option value="Juegos de Sabana">Juegos de Sabana</option>
 	          		<option value="Cubrecamas">Cubrecamas</option>
 	          		<option value="Edredones">Edredones</option>
 	        	</select>
 
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" name="cantidad" max="20" min="1">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" name="cantidad" max="20" min="1">
 
-                <label for="mensaje">Características producto:</label>
-                <textarea name="mensaje" id="mensaje" placeholder="¡Indicanos los colores y formas que deseas!"></textarea>
-            </fieldset>
+                    <label for="mensaje">Características producto:</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="¡Indicanos los colores y formas que deseas!"></textarea>
+                </fieldset>
 
-            <fieldset>
-                <legend>¿Cómo quiere ser contactado?</legend>
-                <label for="opcion">Seleccione:</label>
-                <select name="contacto" id="contacto">
+                <fieldset>
+                    <legend>¿Cómo quiere ser contactado?</legend>
+                    <label for="opcion">Seleccione:</label>
+                    <select name="contacto" id="contacto">
 	          		<option value="" disabled selected>--Seleccione--</option>
 	         		<option value="telefono">Teléfono</option>
 	          		<option value="email">E-mail</option>
-				</select>
+                </select>
 
-                <div class="g-recaptcha" data-sitekey="6Le4fa4ZAAAAAJ7gn3L_q03eOi2OirQewUP51doP" data-callback="correctCaptcha" data-expired-callback="recaptchaExpired"></div>
-                <div align="center"><input onclick="myFunction()" type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
-                <!-- <div></div> -->
-                <input type="reset" value="Borrar información" id=resetear style="display: none;">
-            </fieldset>
-        </form>
-				</div>
+                    <div align="center"><input type="submit" value="Enviar" id="submit" class="boton-enviar"></div>
+                    <input type="reset" value="Borrar información" id=resetear style="display: none;">
+
+                    <script>
+                        const scriptURL = 'https://script.google.com/macros/s/AKfycbyw_JuDRDmN8YO09Gq3wRRzUoltI_P6HTg-qlk8IXanYlqVktQ/exec'
+                        const form = document.forms['submit-to-google-sheet']
+
+                        form.addEventListener('submit', e => {
+                            e.preventDefault()
+                            fetch(scriptURL, {
+                                    method: 'POST',
+                                    body: new FormData(form)
+                                })
+                                .then(response => console.log('Success!', response))
+                                .catch(error => console.error('Error!', error.message))
+
+                            document.getElementById('resetear').click();
+                            var auxForm = document.getElementById("FormularioContactanos");
+                            auxForm.style.display = "none";
+                            alert("Su formulario se envió correctamente");
+
+                            var titulo = document.getElementById("titulo");
+                            titulo.innerHTML = "Pronto nos estaremos comunicando!";
+
+                        })
+                    </script>
+
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -102,52 +128,10 @@
         </div>
     </footer>
 
-    <script>
-        var aux = false;
-        var inputSubmit = document.getElementById("submit");
-        inputSubmit.style.display = "none";
-        var correctCaptcha = function(response) {
-            console.log(response);
-            if (correctCaptcha.length == 0) {
-                inputSubmit.style.display = "none";
-                aux = true;
-            } else {
-                inputSubmit.style.display = "block";
-            }
-        }
-
-        function recaptchaExpired() {
-            inputSubmit.style.display = "none";
-            aux = false;
-            // alert("Your Recaptcha has expired, please verify it again !");
-        }
-    </script>
-
-    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
     <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyw_JuDRDmN8YO09Gq3wRRzUoltI_P6HTg-qlk8IXanYlqVktQ/exec'
-        const form = document.forms['submit-to-google-sheet']
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            document.getElementById('resetear').click();
-            alert("Su formulario se envió correctamente");
-        })
-    </script>
-    <!--
-    <script>
-        function myFunction() {
-
-        }
-    </script> -->
 
 </body>
 
